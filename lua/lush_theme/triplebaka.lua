@@ -42,9 +42,9 @@ local gray_pmenuthumb = gray
 local gray_split = black
 local gray_termcursornc = gray
 
-local gray_statusline = black
-local gray_statuslinenc = black
-local gray_tabline = black
+local gray_statusline = hsl('#dddddd')
+local gray_statuslinenc = hsl('#eeeeee')
+local gray_tabline = hsl('#dddddd')
 local gray_tablinefill = gray_tabline
 
 
@@ -144,7 +144,7 @@ local theme = lush(function(injected_functions)
     SpellLocal     { SpecialKey },
     SpellRare      { SpecialKey },
 
-    StatusLine     { bg = gray_statusline, fg = white }, -- Status line of current window
+    StatusLine     { bg = gray_statusline, fg = black }, -- Status line of current window
     StatusLineNC   { bg = gray_statuslinenc, fg = white }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine        { bg = gray_tabline, fg = gray_comment }, -- Tab pages line, not active tab page label
     TabLineFill    { bg = gray_tablinefill }, -- Tab pages line, where there are no labels
